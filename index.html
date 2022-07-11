@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>tcore</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <img class="logo" src="https://media.discordapp.net/attachments/882733487927459920/989210542545727508/logo1.png">
+<div class="grid">
+<div class="container">
+  <script src="script.js" defer></script>
+  
+
+  <div class="topbar">
+    <div id="clock">
+      12:00
+    </div>
+    <div>
+      barney
+      <span class="stats"></span>
+    </div>
+  </div>
+  <div class="title">
+    <span style="grid-area: b;">TCore</span>
+    <div class="indicator-parent" style="grid-area: c;">
+      <div id="active" style="display: none;" class="indicator"></div>
+      <div id="alert" style="display: none;" class="indicator"></div>
+      <div id="error" style="display: none;" class="indicator"></div>
+    </div>
+  </div>
+  
+  <div class="main">
+    <div class="display">
+      <span>
+        <span id="display">Live</span>
+        <img id="remote" src="remote.svg" width="24" height="24" />
+      </span>
+      <div id="servicesbtn" class="services">
+        <span style="grid-area: b;">SERVICES</span>
+        <img style="grid-area: c;" src="right.svg" />
+      </div>
+    </div>
+    <div class="use">
+      <div class="thbtn">
+        <div class="control">
+          <span id="configkeys" class="thbtnss">Configure Keys</span>
+          <div class="sep1"></div>
+          <span id="reapi" class="thbtnss">Reconnect</span>
+          <div class="sep1"></div>
+          <span id="logs" class="thbtnss">Logs</span>
+        </div>
+      </div>
+      <div class="twobtn">
+        <div id="createreq" class="tbtn" style="justify-self: start;">Create Request</div>
+        <div id="lastsess" class="tbtn" style="justify-self: end;">Last Session</div>
+      </div>
+      <div class="latest">
+        <div class="latestlist">
+          <span>History</span>
+          <div id="itemslist" class="itemslist">
+            
+          </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+
+<div class="form">
+<form id="cr_form">
+  <label class="inpt">
+    <input autocomplete="off" type="text" id="cr_hook" name="fname" class="field" placeholder=" ">
+    <span class="label">Hook</span>
+  </label>
+  <label class="inpt">
+    <input autocomplete="off" type="text" id="cr_action" name="lname" class="field" placeholder=" ">
+    <span class="label">Action</span>
+  </label>
+  <label class="inpt">
+    <input autocomplete="off" type="text" id="cr_function" name="lname" class="field" placeholder=" ">
+    <span class="label">Function</span>
+  </label>
+  <label class="inpt">
+    <textarea id="cr_data" cols="30" rows="5" class="field largefield" placeholder=" "></textarea>
+    <span class="label">Data</span>
+  </label>
+  <p> Check the console for logs</p>
+
+  <button>Send</button> 
+</form> 
+
+</div>
+
+<div class="floating">
+  ?
+</div>
+
+<div class="modal" id="modal">
+  <div id="modal-content">
+    Hello World
+  </div>
+</div>
+
+</body>
+</html>
